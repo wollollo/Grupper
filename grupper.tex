@@ -1,0 +1,133 @@
+%\documentclass[12pt,a4paper]{scrartcl}
+\documentclass[12pt, a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 							                                        %
+%                                                       %
+%                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setlength{\parindent}{0pt} %no paragraph indentation
+
+% standard packages
+\usepackage[latin1]{inputenc}
+\usepackage{amssymb, amsmath, amsthm}
+% \usepackage{fancyhdr}
+
+% might be useful
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage{url}
+% \usepackage{cancel}
+\usepackage{enumerate}
+\usepackage{mathtools}
+% \usepackage[usenames,dvipsnames]{color}
+
+% for harvard-style citation
+\usepackage{natbib}
+
+% for the code listings
+% \usepackage{listings}
+% \lstset{language=Haskell, numbers=left, 
+%  showstringspaces=false, frame=single}
+
+% double spacing
+%\usepackage{setspace}
+% \doublespacing
+
+\usepackage{microtype} %apparently looks better, fiddly typographic stuff
+
+% theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{definitions}[theorem]{Definitions}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{notation}{Notation}
+
+% functions from tropical
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Prin}{Prin}
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\trop}{trop}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\outdeg}{outdeg}
+
+% shortcuts for blackboard font
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\PP}{\mathbb{P}}
+
+
+% macros
+
+% decent looking mod
+%\makeatletter
+%\def\imod#1{\allowbreak\mkern10mu({\operator@font mod}\,\,#1)}
+%\makeatother
+
+
+% \pagestyle{fancy}
+% \pagestyle{myheadings}
+% \markright{} % uncomment this and the line above for simple headings, seperate columns by \hfill
+
+\title{}
+\author{}
+\date{\today} % leave empty to hide, use \today to fill with today's date
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+
+\end{titlepage}
+
+\begin{abstract}
+\end{abstract}
+
+\tableofcontents
+
+%%%%%%%%%
+%CONTENT%
+%%%%%%%%%
+
+\section{Eksempler}
+
+Grupper er mengder med multiplikasjon / struktur.
+
+\subsection{$\ZZ$}
+Mest naturlig matte-objekt er $\NN$, men bare en halv-gruppe: ingen minus. $\ZZ$ er en gruppe, under $+$. Aksiomer: assosiativitet (koble opp mot likningsløsning), $0$ og $-$.
+
+\subsection{$\QQ$ & $\QQ^\times$}
+To grupper på samme mengde (nesten): en kropp.
+
+\subsection{$D_{6 \text{ or } 8}$}
+Endelig og ikke kommutativ. Geometrisk heller enn aritmetisk. Multiplikasjon er komposisjon -- viktig konsept, særlig for representasjon, dette er en!
+
+\subsection{$S_{3,4}$}
+Overgruppe av $D_{2n}$, og alle andre endelige.
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{mycoll}
+
+\end{document}
